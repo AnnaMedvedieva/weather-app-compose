@@ -19,3 +19,11 @@ import androidx.compose.ui.graphics.Color
 
 val transparentWhite = Color(0xCCFFFFFF)
 val transparentGrey = Color(0xCC121212)
+val purple200 = Color(0xFFBB86FC)
+val purple500 = Color(0xFF6200EE)
+val purple700 = Color(0xFF3700B3)
+val teal200 = Color(0xFF03DAC5)
+val lightBlue = Color(0xFFC4F1FF)
+val darkGrey = Color(0xFF121212)
+val white = Color(0xFFFFFFFF)
+val black = Color(0xFF000000)
