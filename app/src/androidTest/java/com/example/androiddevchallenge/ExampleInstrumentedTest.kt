@@ -15,6 +15,8 @@
  */
 package com.example.androiddevchallenge
 
+import androidx.compose.animation.ExperimentalAnimationApi
+import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.Rule
@@ -26,8 +28,10 @@ import org.junit.runner.RunWith
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
+@ExperimentalAnimationApi
 @RunWith(AndroidJUnit4::class)
 class ExampleInstrumentedTest {
+    @ExperimentalMaterialApi
     @get:Rule
     val composeTestRule = createAndroidComposeRule<MainActivity>()
 

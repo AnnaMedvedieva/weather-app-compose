@@ -17,27 +17,48 @@ package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.androiddevchallenge.R
 
-// Set of Material typography styles to start with
-val typography = Typography(
-    body1 = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
+private val light = Font(R.font.montserrat_light, FontWeight.W300)
+private val regular = Font(R.font.montserrat_regular, FontWeight.W400)
+private val thin = Font(R.font.montserrat_thin, FontWeight.W100)
+private val extraLight = Font(R.font.montserrat_extralight, FontWeight.W200)
+
+private val appFontFamily = FontFamily(fonts = listOf(light, regular, thin, extraLight))
+
+val appTypography = Typography(
+    h1 = TextStyle(
+        fontFamily = appFontFamily,
+        fontWeight = FontWeight.W300,
+        fontSize = 96.sp
+    ),
+    h2 = TextStyle(
+        fontFamily = appFontFamily,
+        fontWeight = FontWeight.W300,
+        fontSize = 24.sp
+    ),
+    subtitle1 = TextStyle(
+        fontFamily = appFontFamily,
+        fontWeight = FontWeight.W200,
         fontSize = 16.sp
-    )
-        /* Other default text styles to override
-    button = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.W500,
+    ),
+    subtitle2 = TextStyle(
+        fontFamily = appFontFamily,
+        fontWeight = FontWeight.W200,
         fontSize = 14.sp
     ),
-    caption = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 12.sp
+    body1 = TextStyle(
+        fontFamily = appFontFamily,
+        fontWeight = FontWeight.W300,
+        fontSize = 16.sp
+    ),
+    body2 = TextStyle(
+        fontFamily = appFontFamily,
+        fontWeight = FontWeight.W300,
+        fontSize = 14.sp
     )
-    */
 )
